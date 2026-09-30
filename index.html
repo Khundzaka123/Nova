@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A modern, responsive landing page showcasing our product features and contact information." />
+    <title>Nexora — Build Something Great</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Skip to main content (accessibility) -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- ======================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#hero" class="nav__logo" aria-label="Nexora home">
+          <span class="logo-mark" aria-hidden="true">&#9670;</span>
+          Nexora
+        </a>
+
+        <!-- Hamburger toggle (mobile) -->
+        <button
+          class="nav__toggle"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__menu" id="nav-menu" role="list">
+          <li><a href="#about"    class="nav__link">About</a></li>
+          <li><a href="#features" class="nav__link">Features</a></li>
+          <li><a href="#contact"  class="nav__link">Contact</a></li>
+          <li>
+            <a href="#contact" class="nav__link nav__link--cta btn btn--sm">
+              Get Started
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ======================================================
+         MAIN CONTENT
+    ====================================================== -->
+    <main id="main">
+
+      <!-- ── HERO ── -->
+      <section id="hero" class="hero" aria-labelledby="hero-heading">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="blob blob--1"></div>
+          <div class="blob blob--2"></div>
+          <div class="blob blob--3"></div>
+        </div>
+        <div class="hero__content container" data-reveal>
+          <span class="badge" aria-label="Category">✦ Product Launch 2026</span>
+          <h1 id="hero-heading" class="hero__title">
+            Build something<br />
+            <span class="text-gradient">truly great.</span>
+          </h1>
+          <p class="hero__description">
+            Nexora gives your team the tools, clarity, and confidence to ship
+            faster — without the bloat. Start for free, scale without limits.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Start for Free</a>
+            <a href="#features" class="btn btn--ghost">See Features ↓</a>
+          </div>
+
+          <!-- Social proof strip -->
+          <p class="hero__social-proof">
+            <span class="avatars" aria-hidden="true">
+              <span class="avatar" style="--i:0">A</span>
+              <span class="avatar" style="--i:1">B</span>
+              <span class="avatar" style="--i:2">C</span>
+              <span class="avatar" style="--i:3">D</span>
+            </span>
+            <span>Trusted by <strong>12,000+</strong> teams worldwide</span>
+          </p>
+        </div>
+
+        <!-- Hero visual -->
+        <div class="hero__visual container" aria-hidden="true">
+          <div class="dashboard-card">
+            <div class="dashboard-card__header">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="dashboard-card__title">nexora.app — Dashboard</span>
+            </div>
+            <div class="dashboard-card__body">
+              <div class="stat-row">
+                <div class="stat">
+                  <span class="stat__value">98%</span>
+                  <span class="stat__label">Uptime</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__value">4.2ms</span>
+                  <span class="stat__label">Avg. Response</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__value">12k</span>
+                  <span class="stat__label">Active Users</span>
+                </div>
+              </div>
+              <div class="chart-bars" role="img" aria-label="Activity chart showing increasing trend">
+                <span class="bar" style="--h: 40%"></span>
+                <span class="bar" style="--h: 55%"></span>
+                <span class="bar" style="--h: 45%"></span>
+                <span class="bar" style="--h: 70%"></span>
+                <span class="bar" style="--h: 60%"></span>
+                <span class="bar" style="--h: 85%"></span>
+                <span class="bar" style="--h: 75%"></span>
+                <span class="bar" style="--h: 95%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── ABOUT ── -->
+      <section id="about" class="about section" aria-labelledby="about-heading">
+        <div class="container about__inner" data-reveal>
+          <div class="about__text">
+            <span class="section-badge">About the Project</span>
+            <h2 id="about-heading" class="section-title">
+              Designed for teams that <em>move fast.</em>
+            </h2>
+            <p class="section-body">
+              Nexora was built out of frustration with tools that slow you down.
+              We stripped everything back to the essentials — a fast, focused
+              workspace where your team ships ideas from concept to production
+              in record time.
+            </p>
+            <ul class="about__checklist" role="list">
+              <li>
+                <span class="check-icon" aria-hidden="true">✔</span>
+                Zero-config setup — up and running in under 2 minutes
+              </li>
+              <li>
+                <span class="check-icon" aria-hidden="true">✔</span>
+                End-to-end encrypted with SOC 2 Type II compliance
+              </li>
+              <li>
+                <span class="check-icon" aria-hidden="true">✔</span>
+                Integrates with your existing stack — Slack, GitHub, Jira
+              </li>
+            </ul>
+            <a href="#features" class="btn btn--primary">Explore Features</a>
+          </div>
+
+          <!-- Graphic element -->
+          <div class="about__graphic" aria-hidden="true">
+            <div class="orbit-ring orbit-ring--outer">
+              <div class="orbit-node orbit-node--1">⚡</div>
+              <div class="orbit-node orbit-node--2">🔒</div>
+              <div class="orbit-node orbit-node--3">📊</div>
+            </div>
+            <div class="orbit-ring orbit-ring--inner">
+              <div class="orbit-node orbit-node--4">🔗</div>
+            </div>
+            <div class="orbit-center">N</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FEATURES ── -->
+      <section id="features" class="features section" aria-labelledby="features-heading">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-badge">What You Get</span>
+            <h2 id="features-heading" class="section-title">
+              Everything your team needs.
+            </h2>
+            <p class="section-body section-body--centered">
+              Three pillars that make Nexora the platform your team will
+              actually love to use every day.
+            </p>
+          </header>
+
+          <div class="features__grid" role="list" data-reveal-stagger>
+
+            <!-- Card 1 -->
+            <article class="feature-card" role="listitem">
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Blazing Fast Performance</h3>
+              <p class="feature-card__description">
+                Sub-millisecond query execution and edge-deployed infrastructure
+                mean your app responds the instant users interact — anywhere on
+                the globe.
+              </p>
+              <a href="#contact" class="feature-card__link">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="feature-card feature-card--highlighted" role="listitem">
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+              </div>
+              <div class="feature-card__badge">Most Popular</div>
+              <h3 class="feature-card__title">Enterprise-Grade Security</h3>
+              <p class="feature-card__description">
+                Zero-trust architecture, AES-256 encryption at rest and in
+                transit, granular RBAC, and real-time threat detection baked
+                into every layer of the platform.
+              </p>
+              <a href="#contact" class="feature-card__link">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="feature-card" role="listitem">
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10"/>
+                  <line x1="12" y1="20" x2="12" y2="4"/>
+                  <line x1="6"  y1="20" x2="6"  y2="14"/>
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Real-Time Analytics</h3>
+              <p class="feature-card__description">
+                Crystal-clear dashboards surface actionable insights in real
+                time. Track usage, performance, and team velocity — all from
+                one unified view.
+              </p>
+              <a href="#contact" class="feature-card__link">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CONTACT ── -->
+      <section id="contact" class="contact section" aria-labelledby="contact-heading">
+        <div class="container contact__inner" data-reveal>
+
+          <!-- Contact info side -->
+          <div class="contact__info">
+            <span class="section-badge">Get in Touch</span>
+            <h2 id="contact-heading" class="section-title">
+              Let's build together.
+            </h2>
+            <p class="section-body">
+              Have a question, want a demo, or ready to start? Drop us a message
+              and we'll get back to you within one business day.
+            </p>
+
+            <ul class="contact__details" role="list">
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Email us</strong>
+                  <a href="mailto:hello@nexora.app">hello@nexora.app</a>
+                </div>
+              </li>
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.06 6.06l.97-1.83a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.93 15.3"/>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Call us</strong>
+                  <a href="tel:+15550123456">+1 (555) 012-3456</a>
+                </div>
+              </li>
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Visit us</strong>
+                  <span>123 Startup Way, SF, CA 94105</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact form -->
+          <div class="contact__form-wrap">
+            <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Jane Smith"
+                  autocomplete="name"
+                  aria-describedby="name-error"
+                  required
+                />
+                <span id="name-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="jane@company.com"
+                  autocomplete="email"
+                  aria-describedby="email-error"
+                  required
+                />
+                <span id="email-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <select id="subject" name="subject" class="form-input form-select" aria-describedby="subject-error" required>
+                  <option value="">— Select a topic —</option>
+                  <option value="demo">Request a Demo</option>
+                  <option value="pricing">Pricing Enquiry</option>
+                  <option value="support">Technical Support</option>
+                  <option value="other">Other</option>
+                </select>
+                <span id="subject-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input form-textarea"
+                  placeholder="Tell us a bit about what you need…"
+                  rows="5"
+                  aria-describedby="message-error"
+                  required
+                ></textarea>
+                <span id="message-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-icon" aria-hidden="true">→</span>
+              </button>
+
+              <!-- Success / general error feedback -->
+              <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite" aria-atomic="true"></div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ======================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo" aria-label="Nexora home">
+            <span class="logo-mark" aria-hidden="true">&#9670;</span>
+            Nexora
+          </a>
+          <p class="footer__tagline">Build something truly great.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <ul role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" aria-label="Privacy policy">Privacy</a></li>
+            <li><a href="#" aria-label="Terms of service">Terms</a></li>
+          </ul>
+        </nav>
+
+        <p class="footer__copy">
+          &copy; <span id="current-year"></span> Nexora, Inc. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
